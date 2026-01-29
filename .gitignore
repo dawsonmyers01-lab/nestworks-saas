@@ -137,6 +137,11 @@ dist
 # Vite logs files
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
+<<<<<<< HEAD
 
 .DS_Store
 
+=======
+>>>>>>> 1453907c5b75f38666a5c8ab9d08693cc955b80b
+
+/app/generated/prisma
