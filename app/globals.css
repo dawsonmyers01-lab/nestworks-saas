@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+/* =========================================
+   NestWorks Premium Theme (Tan/Cream/Brown)
+   ========================================= */
+
+:root {
+  --cream: #fbf7f0;
+  --tan: #d8c3a5;
+  --brown: #3b2a1f;
+  --soft-brown: #a68b72;
+  --card: #fffaf3;
+}
+
 html,
 body {
   height: 100%;
@@ -9,4 +21,20 @@ body {
 
 body {
   margin: 0;
+  background: var(--cream);
+  color: var(--brown);
+  font-family: "Merriweather", serif;
+}
+
+/* Headings use elegant cursive trim */
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.5px;
+}
+
+/* Smooth premium feel */
+* {
+  transition: background-color 150ms ease, border-color 150ms ease;
 }

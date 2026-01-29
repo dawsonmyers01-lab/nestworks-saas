@@ -1,8 +1,10 @@
 import "./globals.css";
+import type { Metadata } from "next";
+import { Navbar } from "@/components/navbar";
 
-export const metadata = {
-  title: "Nestworks",
-  description: "Local dev app",
+export const metadata: Metadata = {
+  title: "NestWorks",
+  description: "Premium business tools in one calm workspace.",
 };
 
 export default function RootLayout({
@@ -12,7 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        <main className="min-h-screen px-6 py-10">{children}</main>
+      </body>
     </html>
   );
 }
